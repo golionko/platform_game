@@ -2,6 +2,7 @@ import State from './js/State.js'
 import Level from './js/Level.js';
 import DOMDisplay from './js/DOMDisplay.js';
 import {arrowKeys} from './js/DOMDisplay.js';
+import CanvasDisplay from './js/CanvasDisplay.js';
 
 function runAnimation(frameFunc) {
   let lastTime = null;
@@ -47,4 +48,4 @@ async function runGame(plans, Display) {
   console.log("You've won!");
 }
 
-runGame(GAME_LEVELS, DOMDisplay);
+runGame(GAME_LEVELS, CanvasDisplay);
